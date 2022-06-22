@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper">
         <header id="header" class="header lock-padding">
-            <div class="header__container _containe">
+            <div class="header__container _container">
                 <a href="#" class="header__logo"></a>
                 <a href="#popup" class="header__phone popup-link">Popup #1</a>
             </div>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <a href="#image" class="content__image popup-link">
-                        <img src="#" alt="image">
+                        <img src="./image/image.jpg" alt="image">
                     </a>
                 </section>
                 <section class="content__section">
@@ -53,11 +53,14 @@
         </div>
     </div>
     <div id="popup" class="popup">
+        <a href="#header" class="popup__area"></a>
         <div class="popup__body">
             <div class="popup__content">
-                <a href="#" class="popup__close"></a>
-                <div class="popup__title"></div>
-                <div class="popup__text"></div>
+                <a href="#header" class="popup__close"></a>
+                <div class="popup__title">This is modal window #1</div>
+                <div class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, labore consectetur. Asperiores laborum voluptates cupiditate!
+                </div>
             </div>
         </div>
     </div>
