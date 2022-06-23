@@ -188,6 +188,14 @@ p {
     left: 0px;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup:target .popup__content {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
 }
 
 .popup__area {
@@ -218,6 +226,9 @@ p {
     max-width: 800px;
     padding: 30px;
     position: relative;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    transition: all 0.8s ease 0s;
 }
 
 .popup__close {
